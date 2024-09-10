@@ -30,7 +30,7 @@ jobs:
           with:
             azPSVersion: '3.1.0'
             inlineScript: |
-             Connect-Az Account - tenantid ${{ secrets.AZURE_TENANT_ID}}
+             Connect-AzAccount - tenantid ${{ secrets.AZURE_TENANT_ID}}
              Get-AzADUser
 
 
