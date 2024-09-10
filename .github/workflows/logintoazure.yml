@@ -25,6 +25,9 @@ jobs:
               azcliversion: latest
               inlineScript: |
                 az account show
-                Get-AzADUser
+        - name: Azure Powershell command
+          shell: pwsh
+          run: |
+            Get-AzADUser
 
         
