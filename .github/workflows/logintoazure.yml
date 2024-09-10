@@ -26,8 +26,10 @@ jobs:
               inlineScript: |
                 az account show
         - name: Azure Powershell command
-          shell: pwsh
-          run: |
-            Get-AzADUser
+          uses: azure/powershell@v1
+          with:
+            inlineScript: |
+             Get-AzADUser
+
 
         
