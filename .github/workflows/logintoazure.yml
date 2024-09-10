@@ -25,5 +25,6 @@ jobs:
               azcliversion: latest
               inlineScript: |
                 az account show
+                Get-AzADUser
 
         
