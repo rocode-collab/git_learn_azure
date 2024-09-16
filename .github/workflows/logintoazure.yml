@@ -17,8 +17,8 @@ jobs:
           with:
             client-id: ${{ secrets.AZURE_POLICY_CLIENT_ID }}
             tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-            #subscription-id: ${{ secrets.AZURE_POLICY_SUBSCRIPTION_ID }}
-            allow-no-subscriptions: true
+            subscription-id: ${{ secrets.AZURE_POLICY_SUBSCRIPTION_ID }}
+            #allow-no-subscriptions: true
             enable-AzPSSession: true
         - name: Azure CLI script
           uses: azure/cli@v2
