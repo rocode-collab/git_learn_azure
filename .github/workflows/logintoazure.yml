@@ -31,8 +31,7 @@ jobs:
           with:
             azPSVersion: "latest"
             inlineScript: |
-             Get-AzADUser
-             Get-ExecutionPolicy
+              Get-ExecutionPolicy
 
 
         
