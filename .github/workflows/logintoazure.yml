@@ -15,9 +15,9 @@ jobs:
             path: repo
         - uses: azure/login@v1
           with:
-            client-id: ${{ secrets.AZURE_CLIENT_ID }}
-            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-            #subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+            client-id: ${{ secrets.AZURE_POLICY_CLIENT_ID }}
+            tenant-id: ${{ secrets.AZURE_POLICY_TENANT_ID }}
+            #subscription-id: ${{ secrets.AZURE_POLICY_SUBSCRIPTION_ID }}
             allow-no-subscriptions: true
             enable-AzPSSession: true
         - name: Azure CLI script
